@@ -1,0 +1,50 @@
+set relativenumber
+set number
+
+let mapleader = " "
+
+set incsearch
+set hlsearch
+set ignorecase
+set smartcase
+
+set NERDTree
+
+set which-key
+
+set commentary
+
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+nmap <leader>ff <Action>(GotoFile)
+nmap <leader>fg <Action>(FindInPath)
+nmap <leader>fb <Action>(RecentFiles)
+nmap <leader>fs <Action>(GotoSymbol)
+nmap <leader>fn <Action>(NewFile)
+
+nmap <leader>e <Action>(ActivateProjectToolWindow)
+nmap <leader>E <Action>(SelectInProjectView)
+
+nmap gd <Action>(GotoDeclaration)
+nmap gr <Action>(FindUsages)
+nmap gi <Action>(GotoImplementation)
+nmap K <Action>(QuickJavaDoc)
+nmap <leader>ca <Action>(ShowIntentionActions)
+nmap <leader>rn <Action>(RenameElement)
+
+nmap ]d <Action>(GotoNextError)
+nmap [d <Action>(GotoPreviousError)
+nmap <leader>d <Action>(ShowErrorDescription)
+
+nmap <S-h> <Action>(PreviousTab)
+nmap <S-l> <Action>(NextTab)
+nmap <leader>bd <Action>(CloseContent)
+
+nmap <leader>gg <Action>(ActivateVersionControlToolWindow)
+nmap <leader>gb <Action>(Git.Branches)
+
+nmap <leader>t <Action>(ActivateTerminalToolWindow)
+nmap <leader>tc <Action>(HideActiveWindow)
